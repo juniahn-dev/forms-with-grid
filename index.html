@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Forms UI Design</title>
+  </head>
+  <body>
+    <section class="form1-section">
+      <h2>Connect With Our Team</h2>
+      <p>Fill the form so that our team can reach out to you</p>
+      <form action="/submit-form1" method="post" id="form1" class="form1">
+        <input
+          placeholder="Name"
+          id="form1-name"
+          name="name"
+          type="text"
+          required
+        />
+        <input
+          placeholder="Email"
+          id="form1-email"
+          name="email"
+          type="email"
+          required
+        />
+        <input
+          placeholder="Phone Number"
+          id="form1-number"
+          name="number"
+          type="tel"
+          required
+        />
+      </form>
+      <button form="form1" type="submit">Submit</button>
+    </section>
+    <section class="form2-section">
+      <div class="container">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuxYzXU2sHI92it1ZHhzYYB6esCjVJvDBrw&s"
+          class="side-img"
+        />
+        <div class="content-container">
+          <h1>Contact Us</h1>
+          <div class="content">
+            <form class="form2">
+              <input
+                placeholder="Full Name"
+                id="form2-name"
+                name="name"
+                type="text"
+                required
+              />
+              <input
+                placeholder="E-mail"
+                id="form2-email"
+                name="email"
+                type="email"
+                required
+              />
+              <input
+                placeholder="Message"
+                id="form2-number"
+                name="number"
+                type="text"
+              />
+              <button type="submit">Contact Us</button>
+            </form>
+            <aside>
+              <div>
+                <div class="info">
+                  Contact
+                  <p>hi@green.com</p>
+                </div>
+                <div class="info">
+                  Based in
+                  <p>New York, California, Ohio</p>
+                </div>
+              </div>
+              <img src="./assets/icons.png" />
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form3-section">
+      <h2>Book your appointment now</h2>
+      <p>So our team can reach out to your on time</p>
+      <form id="form3" class="form3">
+        <div class="form-div">
+          <label for="form3-name">Full Name</label>
+          <input placeholder="Name" name="name" type="text" required />
+        </div>
+        <div class="form-div">
+          <label for="form3-email">Email</label>
+          <input placeholder="Email" name="email" type="email" required />
+        </div>
+        <div class="form-div">
+          <label for="form3-number">Phone Number</label>
+          <input placeholder="Phone Number" name="number" type="tel" required />
+        </div>
+        <div class="form-div">
+          <label for="form3-name">Available Date</label>
+          <select>
+            <option value="2024/06/01">2024-06-01</option>
+            <option value="2024/06/02">2024-06-02</option>
+            <option value="2024/06/03">2024-06-03</option>
+            <option value="2024/06/04">2024-06-04</option>
+          </select>
+        </div>
+        <div id="two-row" class="form-div">
+          <label for="form3-name">Share Your Message</label>
+          <textarea placeholder="Message"></textarea>
+        </div>
+      </form>
+      <button form="form3" type="submit">Book Now -></button>
+    </section>
+    <section class="form4-section">
+      <h2>Job Application ( Web )</h2>
+      <form id="form4" class="form4">
+        <div id="form-first" class="form-div">
+          <label for="form4-first">First Name</label>
+          <input
+            id="form4-first"
+            placeholder="Enter First Name......"
+            name="first-name"
+            type="text"
+            required
+          />
+        </div>
+        <div id="form-last" class="form-div">
+          <label for="form4-last">Last Name</label>
+          <input
+            id="form4-last"
+            placeholder="Enter Last Name......"
+            name="last-name"
+            type="text"
+            required
+          />
+        </div>
+        <div id="form-name" class="form-div">
+          <label for="form4-name">Email</label>
+          <input
+            id="form4-name"
+            placeholder="Enter Email......"
+            name="email"
+            type="email"
+            required
+          />
+        </div>
+        <div id="form-select" class="form-div">
+          <label for="form4-select">Job Role</label>
+          <select id="form4-select">
+            <option value="front-dev">Frontend Developer</option>
+            <option value="back-dev">Backend Developer</option>
+            <option value="full-dev">Fullstack Developer</option>
+            <option value="server-dev">Server Engineer</option>
+          </select>
+        </div>
+        <div id="form-address" class="form-div">
+          <label for="form4-address">Share Your Message</label>
+          <textarea id="form4-address"></textarea>
+        </div>
+        <div id="form-city" class="form-div">
+          <label for="form4-city">City</label>
+          <input
+            id="form4-city"
+            placeholder="Enter City......"
+            name="city"
+            type="text"
+            required
+          />
+        </div>
+        <div id="form-pincode" class="form-div">
+          <label for="form4-pincode">Pincode</label>
+          <input
+            id="form4-pincode"
+            placeholder="Enter Pincode......"
+            name="pincode"
+            type="text"
+            required
+          />
+        </div>
+        <div id="form-date" class="form-div">
+          <label for="form4-date">Start Date</label>
+          <input id="form4-date" name="date" type="date" required />
+        </div>
+        <div id="form-cv" class="form-div">
+          <label for="form4-cv">Upload Your CV</label>
+          <input id="form4-cv" name="cv" type="file" required />
+        </div>
+      </form>
+      <button form="form4" type="submit">Apply Now</button>
+    </section>
+  </body>
+</html>
